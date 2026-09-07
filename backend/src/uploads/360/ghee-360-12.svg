@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="gheeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="100%" stop-color="#FEF3C7"/>
+    </linearGradient>
+    <linearGradient id="goldenGhee" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="35%" stop-color="#FDE68A"/>
+      <stop offset="70%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="goldCap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="50%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <filter id="shadowGhee" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="18" flood-color="#78350F" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#gheeBg)" rx="24"/>
+  <ellipse cx="200" cy="515" rx="115" ry="22" fill="#78350F" opacity="0.15" filter="blur(8px)"/>
+
+  <g filter="url(#shadowGhee)">
+    <!-- Golden Jar Lid -->
+    <rect x="150" y="140" width="100" height="35" rx="6" fill="url(#goldCap)"/>
+    <line x1="150" y1="155" x2="250" y2="155" stroke="#78350F" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- Glass Jar Body -->
+    <path d="M 160 175 L 130 220 L 130 470 Q 130 495 155 495 L 245 495 Q 270 495 270 470 L 270 220 L 240 175 Z" fill="#FFFFFF" fill-opacity="0.25" stroke="#FDE68A" stroke-width="2"/>
+
+    <!-- Rich Golden Ghee Content -->
+    <path d="M 134 240 L 134 466 Q 134 490 157 490 L 243 490 Q 266 490 266 466 L 266 240 Q 200 250 134 240 Z" fill="url(#goldenGhee)"/>
+
+    <!-- Jar Label -->
+    <g transform="translate(138.91997964891596, 360) scale(0.3420201433256687, 1)">
+        <rect x="-60" y="-45" width="120" height="90" rx="6" fill="#FFFBEB" stroke="#D97706" stroke-width="1"/>
+        <text x="0" y="-22" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#78350F" text-anchor="middle">PURITY & TRADITION</text>
+        <text x="-45" y="-4" font-family="'Segoe UI', sans-serif" font-size="8" fill="#78350F">100% Desi Grass-Fed</text>
+        <text x="-45" y="10" font-family="'Segoe UI', sans-serif" font-size="8" fill="#78350F">No Preservatives</text>
+        <text x="-45" y="24" font-family="'Segoe UI', sans-serif" font-size="8" fill="#78350F">Rich Granular Texture</text>
+      </g>
+
+    <!-- Glass Highlights -->
+    <path d="M 142 230 L 142 460" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+
+  <g transform="translate(200, 560)">
+    <rect x="-60" y="-14" width="120" height="26" rx="13" fill="#78350F" opacity="0.85"/>
+    <text x="0" y="4" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">360° VIEW • 110°</text>
+  </g>
+</svg>
